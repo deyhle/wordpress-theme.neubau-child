@@ -13,3 +13,8 @@
 
 /*
 You can start adding your own styles here. Use !important to overwrite styles if needed. */
+
+
+.diningtales-tags a {
+  text-transform: capitalize;
+}

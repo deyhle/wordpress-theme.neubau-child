@@ -24,18 +24,22 @@
 			<?php the_title( sprintf( '<h2 class="entry-title" itemprop="name"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 			<div class="entry-meta">
 				<meta itemprop="url" content="<?php the_permalink(); ?>" />
-				<span class="entry-date">
+<?php $tags_list = get_the_tag_list();
+					if ( $tags_list ): ?>
+					<div class="diningtales-tags"><?php the_tags('', ', ', ''); ?></div>
+				<?php endif; // has tags ?>
+				<!--span class="entry-date">
 					<a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a>
 				</span><!-- end .entry-date -->
-				<span class="entry-author" itemprop="author" property="article:author">
+				<!--span class="entry-author" itemprop="author" property="article:author" -->
 				<?php
-					printf( __( 'by <a href="%1$s" title="%2$s">%3$s</a>', 'neubau' ),
+					/*printf( __( 'by <a href="%1$s" title="%2$s">%3$s</a>', 'neubau' ),
 					esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 					sprintf( esc_attr__( 'All posts by %s', 'neubau' ), get_the_author() ),
-					get_the_author() );
+					get_the_author() );*/
 				?>
-				</span><!-- end .entry-author -->
-				<?php edit_post_link( esc_html__( 'Edit', 'neubau' ), '<span class="entry-edit">', '</span>' ); ?>
+				<!--/span--><!-- end .entry-author -->
+				<?php /* edit_post_link( esc_html__( 'Edit', 'neubau' ), '<span class="entry-edit">', '</span>' ); */ ?>
 			</div><!-- end .entry-meta -->
 		</header><!-- end .entry-header -->
 		
