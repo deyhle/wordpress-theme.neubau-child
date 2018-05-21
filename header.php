@@ -30,7 +30,7 @@
 	<header id="masthead" class="site-header cf" role="banner">
 		<div id="site-branding">
 			<?php if ( get_header_image() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-logo"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt=""></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-logo"><img src="<?php header_image(); ?>"  alt=""></a><!--width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"-->
 			<?php endif; ?>
 
 			<?php if ( is_front_page() ) : ?>

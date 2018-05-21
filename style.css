@@ -14,7 +14,47 @@
 /*
 You can start adding your own styles here. Use !important to overwrite styles if needed. */
 
+.taxonomy-description a {
+  color: #71af7c;
+}
 
-.diningtales-tags a {
+.diningtales-tags a,
+.diningtales_tag_name
+{
   text-transform: capitalize;
+}
+
+
+h2.entry-title {
+  background: rgba(255,255,255,0.6);
+}
+
+.home a.site-logo img {
+	width: auto;
+	height: 100%;
+}
+
+.home a.site-logo {
+	float: left;
+	height: 150px;
+	width: auto;
+	-webkit-transition: all .4s;
+		-moz-transition: all .4s;
+		-ms-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;
+}
+
+
+.site-title {
+	display: none;
+}
+
+.small .site-title {
+	display: block;
+}
+
+.home .small a.site-logo {
+	height: 50px;
+	padding-right: 50px;
 }
